@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Course Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="https://images.pexels.com/photos/5898313/pexels-photo-5898313.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://images.pexels.com/photos/4443160/pexels-photo-4443160.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://images.pexels.com/photos/14851420/pexels-photo-14851420.jpeg?auto=compress&cs=tinysrgb&w=600" style="width:100%">
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h1>Course Registration</h1>
+        <form id="registrationForm">
+            <!-- First Name -->
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+
+            <!-- Surname -->
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" name="surname" placeholder="Enter your surname" required>
+
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Password -->
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <!-- Confirm Password -->
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+
+            <!-- Gender -->
+            <label>Gender</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <!-- Date of Birth -->
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <!-- Course Selection -->
+            <label for="course">Select a Course</label>
+            <select id="course" name="course" required>
+                <option value="BCOM">BCOM</option>
+                <option value="BIT">BIT</option>
+                <option value="BMLS">BMLS</option>
+                <option value="BBA">BBA</option>
+                <option value="BSCCS">BSCCS</option>
+            </select>
+
+            <!-- Submit Button -->
+            <button type="submit" id="submitBtn">Register</button>
+        </form>
+    </div>
+
+    <!-- Accordion Section -->
+    <div class="accordion-container">
+        <!-- Course Information Accordion -->
+        <button class="accordion">Course Information</button>
+        <div class="panel">
+            <p><strong>BCOM (Bachelor of Commerce)</strong>: This is a 3-year undergraduate program that covers areas like accounting, finance, business management, and marketing. It prepares students for careers in the business and corporate sectors.</p>
+
+            <p><strong>BIT (Bachelor of Information Technology)</strong>: A 4-year program that teaches the fundamentals of IT systems, programming, database management, cybersecurity, and network administration. It is perfect for those aiming for roles in IT development or system administration.</p>
+
+            <p><strong>BMLS (Bachelor of Medical Laboratory Science)</strong>: This program focuses on the laboratory sciences essential for diagnosing and treating various diseases. Graduates can work in healthcare laboratories or as clinical scientists.</p>
+
+            <p><strong>BBA (Bachelor of Business Administration)</strong>: A 3-year undergraduate degree that provides a solid foundation in business concepts such as economics, human resources, operations management, and organizational behavior. It prepares students for leadership roles in various industries.</p>
+
+            <p><strong>BSCCS (Bachelor of Science in Computer Science)</strong>: This is a 4-year program that focuses on computer science theories, algorithms, software development, data analysis, and AI. Graduates are equipped to pursue careers as software developers, data scientists, or systems analysts.</p>
+        </div>
+
+        <!-- Important Dates Accordion -->
+        <button class="accordion">Important Dates</button>
+        <div class="panel">
+            <p><strong>Registration Opens:</strong> January 15, 2025</p>
+            <p><strong>Registration Closes:</strong> February 15, 2025</p>
+            <p><strong>Course Start Date:</strong> March 1, 2025</p>
+            <p><strong>Examination Dates:</strong> June 1-15, 2025</p>
+            <p><strong>Holiday Break:</strong> July 15-30, 2025</p>
+        </div>
+
+        <!-- Student Resources Accordion -->
+        <button class="accordion">Student Resources</button>
+        <div class="panel">
+            <p><strong>Library Access:</strong> The campus library offers a wide range of academic resources including textbooks, journals, and research papers. Open from 8:00 AM to 8:00 PM on weekdays.</p>
+            <p><strong>Computer Labs:</strong> The computer labs are available for students to use for study and projects. They are equipped with high-speed internet and software for coursework.</p>
+            <p><strong>Health and Counseling Services:</strong> Our health center provides medical services and counseling support for all registered students.</p>
+            <p><strong>Career Services:</strong> Get career guidance and help with internships and job placements at our career center.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
